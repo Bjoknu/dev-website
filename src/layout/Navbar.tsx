@@ -2,10 +2,11 @@ import Logo from "../assets/Logo.png";
 
 /* Navigation links */
 const navlinks = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Contact", href: "/contact" },
+  { name: "Forside", href: "/" },
+  { name: "Boliger til salgs", href: "/boliger-til-salgs" },
+  { name: "Selge bolig ", href: "/selge-bolig" },
+  { name: "Om oss", href: "/om-oss" },
+  { name: "Kontakt", href: "kontakt" },
 ];
 
 function navbar() {
