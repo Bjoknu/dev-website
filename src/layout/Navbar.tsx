@@ -17,7 +17,7 @@ function navbar() {
         <div className="flex items-center">
           <img src={Logo} className="size-22" />
           <span>
-            <a className="text-3xl font-Nightshade text-amber-200">BOLIGSALG</a>
+            <a className="text-3xl font-logo text-amber-200">BOLIGSALG</a>
           </span>
         </div>
 
