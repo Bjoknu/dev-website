@@ -19,7 +19,9 @@ function Hero() {
           textColor="#fde68a"
           color="#451c08"
           height="5rem"
-          onClick={() => console.log("Opptatering etterpå :)")}
+          onClick={() =>
+            window.open("https://www.youtube.com/shorts/VY1pN6s_h7g")
+          }
           radius="1%"
           width="15rem"
           children="Kontakt"
