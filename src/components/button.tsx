@@ -2,6 +2,8 @@ import React from "react";
 
 interface Props {
   border: string;
+  borderColor?: string;
+  textColor?: string;
   color: string;
   children?: React.ReactNode;
   height: string;
@@ -12,6 +14,8 @@ interface Props {
 
 const Button: React.FC<Props> = ({
   border,
+  borderColor,
+  textColor,
   color,
   children,
   height,
@@ -24,7 +28,9 @@ const Button: React.FC<Props> = ({
       onClick={onClick}
       style={{
         backgroundColor: color,
+        color: textColor,
         border,
+        borderColor,
         borderRadius: radius,
         height,
         width,
