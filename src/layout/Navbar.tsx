@@ -1,6 +1,7 @@
 import Logo from "../assets/Logo.png";
+import Hamburger from "../components/Hambuger";
 
-/* Navigation links */
+// Én felles liste brukes både av desktop-navigasjonen og hamburger-menyen.
 const navlinks = [
   { name: "Forside", href: "/" },
   { name: "Boliger til salgs", href: "/boliger-til-salgs" },
@@ -9,11 +10,11 @@ const navlinks = [
   { name: "Kontakt", href: "kontakt" },
 ];
 
-function navbar() {
+function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-amber-950/80">
       <nav className="container mx-auto px-6 flex items-center justify-between">
-        {/* Logo */}
+        {/* Nettstedets logo og navn. */}
         <div className="flex items-center">
           <img src={Logo} className="size-22" />
           <span>
@@ -21,8 +22,8 @@ function navbar() {
           </span>
         </div>
 
-        {/* Desktop Navigation */}
-        <div className="md-hidden md:flex items-center gap-1">
+        {/* Vanlige navigasjonslenker vises fra lg-størrelse og oppover. */}
+        <div className="hidden lg:flex items-center gap-1">
           <div className="rounded-full px-2 py-1 flex items-center gap-3">
             {navlinks.map((link) => (
               <a
@@ -35,9 +36,11 @@ function navbar() {
             ))}
           </div>
         </div>
+        {/* Hamburger-menyen vises på mindre skjermer. */}
+        <Hamburger links={navlinks} />
       </nav>
     </header>
   );
 }
 
-export default navbar;
+export default Navbar;

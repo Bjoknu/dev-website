@@ -20,7 +20,7 @@ function Hero() {
           color="#451c08"
           height="5rem"
           onClick={() =>
-            window.open("https://www.youtube.com/shorts/VY1pN6s_h7g")
+            window.open("")
           }
           radius="1%"
           width="15rem"
